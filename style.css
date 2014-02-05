@@ -46,6 +46,17 @@ body {
 	margin-right:auto;
 }
 
+.main {
+	width: 80%;
+	float: left;
+}
+
+.sidebar {
+	width: 18%;
+	float: right;
+	padding-left: 2%;
+}
+
 section > section {
 	width: 60%;
 	max-width: 27.8125em;
@@ -76,3 +87,9 @@ footer h1 {
 footer p {
 	line-height: .5;
 }
+
+/* CLEARING FIXES
+=================================*/
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
